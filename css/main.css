@@ -1,0 +1,163 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+header {
+    background: #12171a; /* Negro intenso institucional */
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #00c5df; /* Línea de acento turquesa */
+}
+
+header figure {
+    margin: 15px 0;
+}
+
+header img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #00c5df; /* Azul turquesa brillante */
+    color: #12171a;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+section, article, aside {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ESTRUCTURAS DE IMÁGENES Y GALERÍAS */
+figure {
+    margin: 15px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* FORMULARIO SEMÁNTICO */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #00c5df;
+    color: #12171a;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #00a0b5;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* FUENTE ENCABEZADOS */
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #12171a;
+    color: #fff;
+    border-top: 2px solid #00c5df;
+}
+
+/* MEDIA QUERIES PARA MÓVILES */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        display: block;
+    }
+}
+
+.bienvenida{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
